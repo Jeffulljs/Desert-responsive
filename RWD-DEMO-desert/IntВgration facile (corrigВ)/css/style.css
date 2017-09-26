@@ -1,0 +1,123 @@
+html {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  background-image: url('../img/motif.png');
+}
+
+body {
+  margin: 0;
+}
+
+/*
+  Liens généraux
+*/
+
+a {
+  color: #709acd;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/*
+  Conteneur principal
+*/
+
+.container {
+  box-sizing: border-box;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/*
+  Style d'un article
+*/
+
+article {
+   color: #444;
+}
+  article h1 {
+    color: #000;
+    font-size: 42px;
+    text-shadow: 0 2px 1px silver;
+  }
+  article figure {
+    text-align: center;
+  }
+  article aside {
+    overflow: hidden;
+    margin: 18px 0;
+    text-align: right;
+  }
+    article aside img {
+      float: right;
+      width: 80px;
+      border-radius: 50%;
+      margin-left: 14px;
+    }
+    article aside h2 {
+      margin: 8px 0;
+      font-size: 22px;
+      font-weight: 400;
+    }
+    article aside p {
+      margin: 0;
+      font-size: 16px;
+      color: #808080;
+    }
+
+
+/*
+  Composant .card
+  Fond blanc et ombre portée
+*/
+
+.card {
+  padding: 32px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 10px #c0c0c0;
+  line-height: 28px;
+  
+}
+  /* Le premier élément enfant d'une .card n'aura pas de marge externe supérieure */
+  .card :first-child {
+    margin-top: 0;
+  }
+
+/*
+  Section des recommandations
+*/
+
+#recommandations {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/*
+  Chaque article des recommandations sera positionné en flottant à gauche,
+  pour pouvoir les mettre les uns à côté des autres
+*/
+#recommandations article {
+  width: 320px;
+  float: left;
+  margin-right: 20px;
+}
+
+#recommandations article h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/*
+  Effet de transition en grossissement sur les liens des articles recommandés
+*/
+
+a .card {
+  transition: all 300ms;
+}
+a:hover .card {
+  transform: scale(1.05) translateY(10px) ;
+  box-shadow: 0 0 15px 5px #a0cafd;
+}

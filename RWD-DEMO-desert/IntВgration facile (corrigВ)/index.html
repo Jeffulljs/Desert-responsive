@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ecrire, coder, penser, stimuler la réflexion</title>
+  
+  <!-- Inclusion de la Google Fonts nommée "Lato" -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Inclusion de la librairie d'icônes "Font Awesome" :
+        http://fontawesome.io -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Inclusion du fichier de style, rangé proprement dans un dossier CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Conteneur principal du site, centré et limité en largeur via CSS -->
+<main class="container">
+
+    <!--
+      La balise <article> en HTML5 représente une section de contenu indépendante
+      pouvant être extraite individuellement du document sans pénaliser sa compréhension.
+
+      Article à lire sur les nouvelles balises HTML5 :
+        https://www.alsacreations.com/article/lire/1376-html5-section-article-nav-header-footer-aside.html
+    -->
+
+    <article>
+        <h1>Ecrire, coder, penser, stimuler la réflexion</h1>
+
+        <!-- La classe .card permet ici de simplement créer le cadre sur fond blanc avec l'ombre portée externe -->
+        <div class="card">
+
+          <p>On s’entend universellement sur le fait que savoir écrire contribue positivement à la civilisation. On peut prendre pratiquement tous les arguments vantant les bienfaits de l’écriture et les appliquer à la programmation.  Dans les deux cas, savoir écrire le code de communication permet une extension de nos capacités et d’influence sur le monde; le maîtriser ouvre la porte à la réalisation d’oeuvres utiles ou simplement pratiques ou agréables, diffusables et partageables.</p>
+          
+          <figure>
+            <img src="img/code_thinking.png" alt="Le code et la pensée">
+            <figcaption>Technologic male profile, par <a href="http://www.shutterstock.com/gallery-102484p1.html" target="_blank">debra hughes</a></figcaption>
+          </figure>
+
+          <p>L’écriture est intimement liée à l’institution scolaire, c’est ce qu’on y apprend en premier et c’est son enseignement essentiel, avec les concepts mathématiques.  Rarement depuis 5 000 ans (apparition des premières écritures : 3 300 avant JC), un nouveau sujet d’apprentissage fondamental s’est-il ajouté pertinemment dans un curriculum de niveau primaire. Aujourd’hui il s’agit de la programmation, un langage conceptuel, de principe universel.</p>
+
+          <p>À la fois langage et système logique, l’apprentissage de la programmation forme les esprits à différentes manières de penser.  La programmation permet de donner corps à des idées et c’est ce que nous connaissons qui s’approche le plus d’une idée matérialisée.  Mais faire de la place à un nouvel enseignement à l'école signifie la régression de d’autres… le débat est ouvert et acharné, d’autant plus qu’il existe des centaines de langages de programmation et aucun ne peut prétendre à l’universalité, comme pour les langues…</p>
+
+          <p>Nous ne serons pas tous des programmeurs, des codeurs, des architectes de systèmes, mais nous serons tous capables, ou presque, de comprendre le monde informatique qui nous sert, et de l’influencer.</p>
+          
+          <!--
+            La balise <aside> est une section dont le contenu est un complément par rapport à ce qui l'entoure,
+              qui n'est pas forcément en lien direct avec le contenu mais qui peut apporter des informations supplémentaires.
+            
+            c.f. https://www.alsacreations.com/article/lire/1376-html5-section-article-nav-header-footer-aside.html
+          -->
+          <aside>
+            <img src="img/tara.jpg" alt="Photo de Tara Arnold">
+            <h2>Tara Arnold</h2>
+            <p>Développeuse Front-end. Lead-tech @ Stripes Inc.</p>
+          </aside>
+
+          <!-- La balise <footer> est ici utilisée en tant que section de fin de l'<article>, ce qui est tout à fait possible -->
+          <footer>
+            <i class="fa fa-comment"></i> <!-- Affichage de l'icône de bulle de commentaire, via "Font Awesome" -->
+            <a href="#">3 commentaires</a>
+          </footer>
+
+        </div><!-- .cadre -->
+
+    </article>
+
+    <!-- Démarrage d'une nouvelle section avec un identifiant "recommandations" : Permet de pouvoir naviguer directement
+        jusqu'à cette section en tapant dans l'URL : /index.html#recommandations
+
+        Cela s'appelle un lien vers "une ancre"
+    -->
+    <section id="recommandations" class="clearfix">
+      <h1>Articles recommandés</h1>
+
+      <a href="#">
+        <article class="card"><!-- Réutilisation de la classe .card pour le fond blanc et ombre portée -->
+          <h1>Découvrir la programmation en jouant avec "Hour of Code"</h1>
+          <p>La programmation est-elle ludique ? Disons qu’à première vue, écrire des lignes de code n’a rien de palpitant …et pourtant, nombreux ceux qui changeront d’avis après une session d’ "Hour of code" !</p>
+        </article>
+      </a>
+
+      <a href="#">
+        <article class="card"><!-- Réutilisation de la classe .card pour le fond blanc et ombre portée -->
+          <h1>Code Combat : pour apprendre en jouant le JavaScript</h1>
+          <p>Les langages de programmation sont difficiles à saisir et ennuyeux à apprendre. Des jeunes développeurs ont donc décidé d'utiliser le jeu pour que le grand public puisse saisir les subtilités du JavaScript. Un concept addictif et accessible aux débutants.</p>
+        </article>
+      </a>
+    </section><!-- #recommandations -->
+
+</main><!-- .container -->
+
+</body>
+</html>
